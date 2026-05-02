@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Shaquib | Senior UI/UX & Systems Architect | PhD Portfolio</title>
+
+    <!-- Meta SEO & OpenGraph -->
+    <meta name="description"
+        content="Official Systems Architecture Portfolio of Md Shaquib. Lead Software Engineer & Head of IT at Quick Smart Wash. Specializing in RFID Logistics, ERP Development, and Industrial Automation.">
+    <meta name="keywords"
+        content="Md Shaquib, Systems Architect, Lead Software Engineer, Quick Smart Wash, RFID Laundry tracking, Enterprise ERP, Next.js Expert, Industrial Cyber-Minimalism">
+    <meta property="og:title" content="Md Shaquib | Senior UI/UX & Systems Architect">
+    <meta property="og:description" content="Architecting high-performance industrial ecosystems.">
+    <meta property="og:type" content="website">
+
+    <!-- Prefetch & Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Outfit:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- [MODULE: BOOT_SEQUENCE] -->
+    <div id="boot-sequence">
+        <div class="boot-content">
+            <div class="boot-header">
+                <span class="boot-title">SHAQUIB_OS v4.2.0</span>
+                <span class="boot-version">BUILD_2026.05.02</span>
+            </div>
+            <div id="boot-logs" class="boot-logs-container">
+                <div class="log-line">[OK] KERNEL_INIT_SUCCESS</div>
+                <div class="log-line">[OK] VIRTUAL_MEMORY_MAPPING... 0x00000000 -> 0xFFFFFFFF</div>
+                <div class="log-line">[OK] LOADING_SYMBOLS: [NEXT.JS, FIREBASE, ZEBRA_SDK, MQTT]</div>
+                <div class="log-line">[OK] HARDWARE_ABSTRACTION_LAYER_ACTIVE</div>
+                <div class="log-line">[OK] RFID_MODULE_01: ONLINE (GATES 1-12)</div>
+                <div class="log-line">[OK] DB_CLUSTER_UPLINK: STABLE (4ms LATENCY)</div>
+                <div class="log-line">[OK] ENCRYPTED_HANDSHAKE_COMPLETE</div>
+                <div class="log-line">[WAIT] REQUESTING_USER_CLEARANCE_LVL_4...</div>
+                <div class="log-line">[OK] ACCESS_GRANTED: MD_SHAQUIB</div>
+                <div class="log-line">[OK] INITIALIZING_NEURAL_INTERFACE...</div>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div class="boot-footer">SYSTEM READY. PRESS ANY KEY TO INITIALIZE.</div>
+        </div>
+    </div>
+
+    <!-- [MODULE: CANVAS_BACKGROUND] -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- [MODULE: CUSTOM_CURSOR] -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- [MODULE: NAVIGATION] -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <div class="logo-wrapper magnetic">
+                <div class="logo" data-text="SHAQUIB.">SHAQUIB<span>.</span></div>
+            </div>
+            <nav class="nav-links">
+                <div class="nav-item">
+                    <span class="nav-num">01</span>
+                    <a href="#hero">INFRASTRUCTURE</a>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-num">02</span>
+                    <a href="#projects">PROJECT_FILES</a>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-num">03</span>
+                    <a href="#architecture">SYSTEM_LOGIC</a>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-num">04</span>
+                    <a href="#methodology">RESEARCH</a>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-num">05</span>
+                    <a href="#credentials">CREDENTIALS</a>
+                </div>
+                <div class="nav-item terminal-trigger">
+                    <span class="nav-num">06</span>
+                    <a href="#terminal" class="terminal-btn">COMMAND_CENTER</a>
+                </div>
+            </nav>
+            <div class="system-status-indicator">
+                <div class="status-dot pulse"></div>
+                <span class="status-text">SYSTEM_UPTIME: <span id="uptime-counter">0</span>s</span>
+            </div>
+        </div>
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </header>
+
+    <main>
+        <!-- [SECTION: HERO] -->
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="reveal status-tag-group">
+                        <span class="section-tag">Systems Architect</span>
+                        <span class="separator">|</span>
+                        <span class="section-tag">Lead Software Engineer</span>
+                        <span class="separator">|</span>
+                        <span class="section-tag">RFID & Automation Expert</span>
+                    </div>
+                    <h1 class="reveal" data-text="Architecting Digital Resilience.">
+                        Architecting<br>Digital Resilience<span>.</span>
+                    </h1>
+                    <p class="hero-subtitle reveal">
+                        As Head of IT at Quick Smart Wash, I orchestrate complex enterprise ecosystems
+                        that bridge the gap between industrial hardware and high-performance software.
+                        My focus: Reliability, Scalability, and Precision Engineering.
+                    </p>
+                    <div class="hero-actions reveal">
+                        <div class="btn-group">
+                            <a href="#projects" class="btn-primary magnetic">
+                                <span class="btn-text">INITIALIZE_EXPLORATION</span>
+                                <span class="btn-icon">→</span>
+                            </a>
+                            <a href="#terminal" class="btn-secondary magnetic">
+                                <span class="btn-text">OPEN_SSH_SESSION</span>
+                            </a>
+                        </div>
+                        <div class="hero-telemetry">
+                            <div class="telemetry-item">
+                                <span class="label">CORE_TEMP:</span>
+                                <span class="value">42°C</span>
+                            </div>
+                            <div class="telemetry-item">
+                                <span class="label">DATA_THROUGHPUT:</span>
+                                <span class="value">1.2 GB/s</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="scene">
+                        <div class="cube-container">
+                            <div class="cube core">
+                                <div class="cube-face face-front"></div>
+                                <div class="cube-face face-back"></div>
+                                <div class="cube-face face-right"></div>
+                                <div class="cube-face face-left"></div>
+                                <div class="cube-face face-top"></div>
+                                <div class="cube-face face-bottom"></div>
+                            </div>
+                            <div class="cube outer">
+                                <div class="cube-face face-front"></div>
+                                <div class="cube-face face-back"></div>
+                                <div class="cube-face face-right"></div>
+                                <div class="cube-face face-left"></div>
+                                <div class="cube-face face-top"></div>
+                                <div class="cube-face face-bottom"></div>
+                            </div>
+                            <!-- Orbital Schematics -->
+                            <div class="orbital-ring ring-1"></div>
+                            <div class="orbital-ring ring-2"></div>
+                        </div>
+                    </div>
+                    <div class="visual-HUD">
+                        <div class="hud-box top-left">SCN_001</div>
+                        <div class="hud-box top-right">TRK_ACTIVE</div>
+                        <div class="hud-box bottom-left">CORE_V4</div>
+                        <div class="hud-box bottom-right">RE-SYNC</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- [SECTION: INFRASTRUCTURE_SPECS] -->
+        <section class="infrastructure-section container" id="infrastructure">
+            <div class="section-header reveal">
+                <span class="section-tag">01 // Hardware & Cloud Stack</span>
+                <h2 class="section-title">Technical Infrastructure</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="infra-grid">
+                <div class="infra-card reveal">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1">
+                            <rect x="2" y="2" width="20" height="8" rx="2" />
+                            <rect x="2" y="14" width="20" height="8" rx="2" />
+                            <line x1="6" y1="6" x2="6" y2="6" />
+                            <line x1="6" y1="18" x2="6" y2="18" />
+                        </svg>
+                    </div>
+                    <h3>Edge Computing</h3>
+                    <p>Localized RFID processing units running custom middleware for instantaneous data capture and
+                        collision handling.</p>
+                    <ul class="spec-list">
+                        <li>Zebra RFID Hardware</li>
+                        <li>Custom SDK Integration</li>
+                        <li>MQTT v5.0 Protocol Orchestration</li>
+                    </ul>
+                </div>
+                <div class="infra-card reveal">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3>Core Engine</h3>
+                    <p>Next.js based architecture utilizing server-side rendering and incremental static regeneration
+                        for real-time dashboards.</p>
+                    <ul class="spec-list">
+                        <li>Next.js (App Router)</li>
+                        <li>TypeScript Strict Mode</li>
+                        <li>Tailwind CSS / Framer Motion</li>
+                    </ul>
+                </div>
+                <div class="infra-card reveal">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1">
+                            <ellipse cx="12" y="5" rx="9" ry="3" />
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                        </svg>
+                    </div>
+                    <h3>Data Persistence</h3>
+                    <p>Hybrid SQL/NoSQL strategy. MySQL for transactional integrity and Firebase/Redis for
+                        real-time state synchronization.</p>
+                    <ul class="spec-list">
+                        <li>MySQL</li>
+                        <li>Firebase Realtime DB</li>
+                        <li>Redis Cache Clusters</li>
+                    </ul>
+                </div>
+                <div class="infra-card reveal">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                        </svg>
+                    </div>
+                    <h3>DevOps & CI/CD</h3>
+                    <p>Automated deployment pipelines with zero-downtime rolling updates and rigorous unit/integration
+                        testing suites.</p>
+                    <ul class="spec-list">
+                        <li>GitHub Actions Pipelines</li>
+                        <li>Docker Containerization</li>
+                        <li>Vercel / AWS Lambda Edge</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Deep Tech Spec Block -->
+            <div class="tech-deep-specs reveal">
+                <div class="spec-header">SYSTEM_NODE_CONFIGURATION</div>
+                <div class="spec-body">
+                    <pre class="code-block">
+{
+  <span class="key">"node_id"</span>: <span class="string">"QSW_DXB_MAIN_01"</span>,
+  <span class="key">"architecture"</span>: <span class="string">"ARM64_DISTRIBUTED"</span>,
+  <span class="key">"os_kernel"</span>: <span class="string">"LINUX_CORE_6.5.12_LTS"</span>,
+  <span class="key">"db_engine"</span>: <span class="string">"MYSQL_8.0_COMMUNITY"</span>,
+  <span class="key">"rfid_subsystem"</span>: {
+    <span class="key">"frequency"</span>: <span class="string">"865.6-867.6_MHz"</span>,
+    <span class="key">"protocol"</span>: <span class="string">"EPC_CLASS1_GEN2"</span>,
+    <span class="key">"polling_rate"</span>: <span class="string">"120_pings/sec"</span>
+  },
+  <span class="key">"load_balancer"</span>: <span class="string">"NGINX_L7_PROXY"</span>,
+  <span class="key">"security"</span>: <span class="string">"AES_256_GCM_ENCRYPTED"</span>
+}
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- [SECTION: BENTO_PROJECTS] -->
+        <section class="projects-section container" id="projects">
+            <div class="section-header reveal">
+                <span class="section-tag">02 // Enterprise Deployments</span>
+                <h2 class="section-title">Project Case Studies</h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Project 1: RFID -->
+                <div class="bento-item item-large reveal">
+                    <div class="bento-content">
+                        <span class="item-tag">INDUSTRIAL_IOT</span>
+                        <h3>RFID Logistics Hub</h3>
+                        <p>A flagship system for Quick Smart Wash. We implemented a multi-gate RFID tracking environment
+                            that manages 50,000+ pieces of linen daily with 99.98% inventory accuracy.</p>
+                        <p class="technical-deep-dive">
+                            The system utilizes custom Zebra SDK implementations to handle signal interference in
+                            metal-heavy laundry environments.
+                            Data is streamed via EMQX Enterprise to a localized buffer before being synced to the
+                            central cloud
+                            cluster.
+                        </p>
+                    </div>
+                    <div class="item-tech-specs">
+                        <div class="spec-row"><span>PROTOCOL:</span><span>RFID_GEN2_UHF</span></div>
+                        <div class="spec-row"><span>HARDWARE:</span><span>ZEBRA_FX9600</span></div>
+                        <div class="spec-row"><span>LATENCY:</span><span>&lt;200ms</span></div>
+                    </div>
+                    <div class="schematic-overlay">
+                        <svg width="100%" height="100%" viewBox="0 0 400 400" opacity="0.1">
+                            <rect x="50" y="50" width="300" height="300" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <circle cx="200" cy="200" r="100" fill="none" stroke="currentColor" stroke-width="1" />
+                            <line x1="50" y1="200" x2="350" y2="200" stroke="currentColor" stroke-width="1"
+                                stroke-dasharray="4" />
+                            <line x1="200" y1="50" x2="200" y2="350" stroke="currentColor" stroke-width="1"
+                                stroke-dasharray="4" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Project 2: ERP -->
+                <div class="bento-item item-tall reveal">
+                    <div class="bento-content">
+                        <span class="item-tag">SaaS_ENTERPRISE</span>
+                        <h3>Proprietary ERP</h3>
+                        <p>Developed an internal Enterprise Resource Planner from scratch. Managing payroll for 850+
+                            employees, industrial machine maintenance logs, and asset depreciation.</p>
+                        <div class="feature-pills">
+                            <span class="pill">Payroll_Engine</span>
+                            <span class="pill">Asset_Tracker</span>
+                            <span class="pill">HR_Portal</span>
+                        </div>
+                    </div>
+                    <div class="item-tech-specs">
+                        <div class="spec-row"><span>USERS:</span><span>850+</span></div>
+                        <div class="spec-row"><span>UPTIME:</span><span>99.9%</span></div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Audit -->
+                <div class="bento-item reveal">
+                    <div class="bento-content">
+                        <span class="item-tag">DATA_INTEGRITY</span>
+                        <h3>IT Asset Audit</h3>
+                        <p>Automated inventory system for 5,000+ hardware nodes across multiple laundry facilities.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4: Migration -->
+                <div class="bento-item item-wide reveal">
+                    <div class="bento-content">
+                        <span class="item-tag">INFRASTRUCTURE</span>
+                        <h3>Cloud Data Migration</h3>
+                        <p>Zero-downtime migration of legacy SQL data (5,000+ user profiles) to a modern
+                            Next.js/Firebase architecture with full data validation and checksum verification.</p>
+                    </div>
+                    <div class="item-tech-specs">
+                        <div class="spec-row"><span>VOL:</span><span>2.4 TB</span></div>
+                        <div class="spec-row"><span>DOWNTIME:</span><span>0.0s</span></div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Smart Wash -->
+                <div class="bento-item reveal">
+                    <div class="bento-content">
+                        <span class="item-tag">AUTOMATION</span>
+                        <h3>Smart Wash Hub</h3>
+                        <p>Real-time telemetry dashboard for industrial washing machine cycles and chemical consumption.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 6: Delivery App -->
+                <div class="bento-item reveal">
+                    <div class="bento-content">
+                        <span class="item-tag">MOBILE_OPS</span>
+                        <h3>Fleet Dispatch</h3>
+                        <p>React Native application for driver route optimization and real-time delivery confirmations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [SECTION: ARCHITECTURE_DEEP_DIVE] -->
+        <section class="arch-section container" id="architecture">
+            <div class="section-header reveal">
+                <span class="section-tag">03 // System Engineering</span>
+                <h2 class="section-title">Architecture Workflow</h2>
+                <p class="section-desc">The "Patient Journey" of Linen Management - A technical breakdown of our
+                    proprietary logistics pipeline.</p>
+            </div>
+
+            <div class="arch-container reveal">
+                <div class="arch-tabs">
+                    <button class="tab-btn active" data-tab="collection">INGRESS_LAYER</button>
+                    <button class="tab-btn" data-tab="processing">COMPUTE_CORE</button>
+                    <button class="tab-btn" data-tab="dispatch">EGRESS_PROTOCOLS</button>
+
+                    <div class="arch-telemetry">
+                        <div class="telemetry-header">LIVE_SYSTEM_STATUS</div>
+                        <div class="telemetry-stats">
+                            <div class="stat"><span>CPU_LOAD</span><span id="stat-cpu">24%</span></div>
+                            <div class="stat"><span>MEM_USAGE</span><span id="stat-mem">1.2GB</span></div>
+                            <div class="stat"><span>RFID_PINGS</span><span id="stat-pings">142/s</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arch-content">
+                    <div class="tab-panel active" id="collection">
+                        <div class="panel-header">
+                            <span class="panel-num">PHASE_01</span>
+                            <h4>Data Ingress & Hardware Handshake</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-text">
+                                <p>Our Inbound Logistics layer utilizes a distributed EMQX broker architecture to manage
+                                    high-velocity data streams from multiple RFID gates simultaneously.</p>
+                                <p>Hardware-level optimization ensures that item collision in the RF field is handled
+                                    via custom anti-collision algorithms, guaranteeing 100% detection rate at conveyor
+                                    speeds up to 2m/s.</p>
+                            </div>
+                            <div class="panel-schematic">
+                                <pre class="code-schematic">
+<span class="comment">// INGRESS_PIPELINE_ORCHESTRATION</span>
+[RFID_GATE] --(Pub)--> [EMQX_BROKER] --(Sub)--> [EDGE_PROXY]
+     |                     |                       |
+  [SENSORS] <-----(gRPC)---+------(TLS_1.3)------> [CORE_DB]
+                                </pre>
+                            </div>
+                        </div>
+                        <div class="tech-stack-list">
+                            <span class="tech-tag">EMQX_ENTERPRISE</span>
+                            <span class="tech-tag">RABBIT_MQ_NODE</span>
+                            <span class="tech-tag">ZEBRA_HAL_v3</span>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="processing">
+                        <div class="panel-header">
+                            <span class="panel-num">PHASE_02</span>
+                            <h4>Orchestration & State Management</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-text">
+                                <p>The processing core utilizes an event-driven microservices architecture. State is
+                                    managed via a combination of Redis for hot-path caching and a highly available
+                                    MySQL cluster for transactional persistence.</p>
+                                <p>Automated load balancing ensures that chemical injection protocols and machine cycles
+                                    are synchronized with the real-time production queue, minimizing waste and
+                                    maximizing throughput.</p>
+                            </div>
+                        </div>
+                        <div class="tech-stack-list">
+                            <span class="tech-tag">K8S_ORCHESTRATION</span>
+                            <span class="tech-tag">HELM_CHARTS_v3</span>
+                            <span class="tech-tag">REDIS_CLUSTER_V7</span>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="dispatch">
+                        <div class="panel-header">
+                            <span class="panel-num">PHASE_03</span>
+                            <h4>Audit Reconciliation & Dispatch</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-text">
+                                <p>The Egress layer performs a cryptographic verification of all items against the
+                                    Ingress manifest. Any discrepancy triggers an immediate system halt and operator
+                                    notification to ensure zero loss of customer property.</p>
+                                <p>Final delivery logic is optimized using custom heuristics for fleet routing, reducing
+                                    fuel consumption by 15% through intelligent load distribution and real-time traffic
+                                    integration.</p>
+                            </div>
+                        </div>
+                        <div class="tech-stack-list">
+                            <span class="tech-tag">CRYPTOGRAPHIC_AUDIT</span>
+                            <span class="tech-tag">REACT_NATIVE_OPS</span>
+                            <span class="tech-tag">GEO_FENCING</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [SECTION: METHODOLOGY_WHITEBOARD] -->
+        <section class="methodology-section container" id="methodology">
+            <div class="section-header reveal">
+                <span class="section-tag">04 // Research & Methodology</span>
+                <h2 class="section-title">Systems Design Theory</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="methodology-grid">
+                <div class="theory-box reveal">
+                    <div class="theory-title">Event-Driven Architecture (EDA)</div>
+                    <p>Implementing EDA allows our logistics systems to remain decoupled and highly resilient. Every
+                        laundry movement is an event emitted to a central bus.</p>
+                    <div class="theory-visual">
+                        <svg width="100%" height="150" viewBox="0 0 400 150">
+                            <rect x="20" y="50" width="80" height="50" rx="4" fill="none" stroke="var(--accent-blue)" />
+                            <text x="60" y="80" text-anchor="middle" fill="white" font-size="10">PRODUCER</text>
+                            <line x1="100" y1="75" x2="150" y2="75" stroke="var(--accent-cyan)" stroke-width="2"
+                                marker-end="url(#arrow)" />
+                            <rect x="150" y="30" width="100" height="90" rx="4" fill="none"
+                                stroke="var(--accent-cyan)" />
+                            <text x="200" y="80" text-anchor="middle" fill="white" font-size="10">EVENT_BUS</text>
+                            <line x1="250" y1="75" x2="300" y2="75" stroke="var(--accent-cyan)" stroke-width="2" />
+                            <rect x="300" y="50" width="80" height="50" rx="4" fill="none"
+                                stroke="var(--accent-blue)" />
+                            <text x="340" y="80" text-anchor="middle" fill="white" font-size="10">CONSUMER</text>
+                            <defs>
+                                <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto"
+                                    markerUnits="strokeWidth">
+                                    <path d="M0,0 L0,6 L9,3 z" fill="var(--accent-cyan)" />
+                                </marker>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="theory-box reveal">
+                    <div class="theory-title">Fault Tolerance & Redundancy</div>
+                    <p>Zero-downtime is a requirement, not a goal. We utilize dual-region database clusters with
+                        automated failover via health-check proxies.</p>
+                    <div class="theory-visual">
+                        <svg width="100%" height="150" viewBox="0 0 400 150">
+                            <circle cx="100" cy="75" r="30" fill="none" stroke="var(--accent-blue)"
+                                stroke-dasharray="5,3" />
+                            <text x="100" y="80" text-anchor="middle" fill="white" font-size="10">NODE_A</text>
+                            <circle cx="300" cy="75" r="30" fill="none" stroke="var(--accent-blue)"
+                                stroke-dasharray="5,3" />
+                            <text x="300" y="80" text-anchor="middle" fill="white" font-size="10">NODE_B</text>
+                            <path d="M130 75 Q 200 25 270 75" fill="none" stroke="var(--accent-cyan)"
+                                stroke-width="1" />
+                            <path d="M130 75 Q 200 125 270 75" fill="none" stroke="var(--accent-cyan)"
+                                stroke-width="1" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documentation Snippet -->
+            <div class="doc-section reveal">
+                <div class="doc-header">
+                    <span class="doc-title">API_DOCUMENTATION_V4_BETA</span>
+                    <span class="doc-status">INTERNAL_USE_ONLY</span>
+                </div>
+                <div class="doc-body">
+                    <div class="endpoint">
+                        <span class="method">POST</span>
+                        <span class="url">/api/v1/logistics/handshake</span>
+                    </div>
+                    <pre class="code-block">
+<span class="comment">/**
+ * Synchronizes RFID gate data with core database cluster.
+ * Ensures cryptographic integrity of transmitted payloads.
+ */</span>
+<span class="key">async function</span> <span class="string">syncNode</span>(payload: <span class="key">InboundPayload</span>) {
+  <span class="key">const</span> checksum = <span class="string">generateChecksum</span>(payload);
+  <span class="key">const</span> response = <span class="key">await</span> <span class="string">fetch</span>(UPLINK_URL, {
+    method: <span class="string">'POST'</span>,
+    headers: { <span class="string">'X-Signature'</span>: checksum },
+    body: <span class="key">JSON</span>.<span class="string">stringify</span>(payload)
+  });
+  <span class="key">return</span> response.ok;
+}
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- [SECTION: EXPERIENCE_TIMELINE] -->
+        <section class="credentials-section container" id="credentials">
+            <div class="section-header reveal">
+                <span class="section-tag">05 // Career Trajectory</span>
+                <h2 class="section-title">Experience & Credentials</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - PRESENT</div>
+                    <div class="timeline-content">
+                        <h3>Head of IT & Lead Software Engineer</h3>
+                        <span class="company">Quick Smart Wash (QSW)</span>
+                        <p>Leading the digital transformation of industrial laundry services. Architected the entire
+                            RFID ecosystem and internal ERP stack. Responsible for a 500% increase in operational
+                            throughput via automation.</p>
+                        <div class="key-impact">
+                            <span>+ DEPLOYED_RFID_GATES: 12</span>
+                            <span>+ USER_BASE_MANAGED: 5,000+</span>
+                            <span>+ ERR_RATE_REDUCTION: 85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Senior Full-Stack Developer</h3>
+                        <span class="company">System Solutions Ltd</span>
+                        <p>Developed enterprise SaaS platforms and managed large-scale cloud migrations for high-profile
+                            UAE-based hospitality clients.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <span class="company">Digital Frontiers</span>
+                        <p>Focused on website performance optimization and cross-platform mobile application
+                            development using NextJS and Flutter.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="skills-matrix reveal">
+                <div class="skills-column">
+                    <h4>ARCHITECTURAL_SKILLS</h4>
+                    <div class="skill-bar">
+                        <div class="fill" style="width: 95%;"></div><span>System Design (95%)</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="fill" style="width: 90%;"></div><span>Cloud Infrastructure (90%)</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="fill" style="width: 85%;"></div><span>Microservices (85%)</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="fill" style="width: 80%;"></div><span>Cyber Security (80%)</span>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h4>CORE_STACK_SKILLS</h4>
+                    <div class="skill-bar">
+                        <div class="fill" style="width: 98%;"></div><span>Next.js / React (98%)</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="fill" style="width: 92%;"></div><span>Node.js / Express (92%)</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="fill" style="width: 88%;"></div><span>RFID / IoT Integration (88%)</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="fill" style="width: 94%;"></div><span>TypeScript (94%)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [SECTION: TERMINAL_COMMAND_CENTER] -->
+        <section class="terminal-section container" id="terminal">
+            <div class="section-header reveal">
+                <span class="section-tag">06 // Administrative Access</span>
+                <h2 class="section-title">Command Center</h2>
+                <p class="section-desc">Interactive SSH shell for deep-system inspection and log retrieval.</p>
+            </div>
+
+            <div class="terminal-window reveal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
+                    </div>
+                    <div class="terminal-title">admin@shaquib: ~ (ssh)</div>
+                    <div class="terminal-actions">
+                        <span>UTF-8</span>
+                        <span>SHA-256</span>
+                        <span>AES-256-GCM</span>
+                    </div>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <div class="terminal-welcome">
+                        <pre>
+   _____ _    _         ____  _    _ _____ ____  
+  / ____| |  | |  /\   / __ \| |  | |_   _|  _ \ 
+ | (___ | |__| | /  \ | |  | | |  | | | | | |_) |
+  \___ \|  __  |/ /\ \| |  | | |  | | | | |  _ < 
+  ____) | |  | / ____ \ |__| | |__| |_| |_| |_) |
+ |_____/|_|  |_/_/    \_\___\_\\____/|_____|____/ 
+                                                  
+                        </pre>
+                        <div class="terminal-output">SHAQUIB_OS v4.2.0 (Terminal v1.0.4)</div>
+                        <div class="terminal-output">AUTHENTICATED AS: admin_shaquib [UID: 0]</div>
+                        <div class="terminal-output">TYPE 'HELP' TO SEE SYSTEM COMMANDS.</div>
+                        <br>
+                    </div>
+                    <div id="terminal-history"></div>
+                    <div class="terminal-input-line">
+                        <span class="terminal-prompt">admin@shaquib:~$</span>
+                        <input type="text" id="terminal-input" autofocus spellcheck="false" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [SECTION: GLOBAL_OPERATIONS] -->
+        <section class="global-ops container reveal">
+            <div class="ops-layout">
+                <div class="ops-info">
+                    <span class="section-tag">Global Footprint</span>
+                    <h3>Operations Coverage</h3>
+                    <p>Managing high-concurrency industrial environments across multiple facilities with unified cloud
+                        synchronization.</p>
+                    <div class="ops-stats">
+                        <div class="stat-box">
+                            <span class="val">Dubai, UAE</span>
+                            <span class="lbl">CORE_HQ</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="val">5,000+</span>
+                            <span class="lbl">ACTIVE_USERS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ops-map">
+                    <svg width="100%" height="300" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        opacity="0.3">
+                        <path d="M150 100 Q 400 50 650 100 T 750 300" stroke="var(--accent-blue)" stroke-width="1"
+                            stroke-dasharray="10 5" />
+                        <circle cx="150" cy="100" r="4" fill="var(--accent-blue)" />
+                        <circle cx="650" cy="100" r="4" fill="var(--accent-blue)" />
+                        <circle cx="400" cy="200" r="6" fill="var(--accent-cyan)" class="pulse" />
+                        <!-- Connection lines to nodes -->
+                        <line x1="400" y1="200" x2="150" y2="100" stroke="var(--accent-blue)" stroke-width="0.5"
+                            opacity="0.5" />
+                        <line x1="400" y1="200" x2="650" y2="100" stroke="var(--accent-blue)" stroke-width="0.5"
+                            opacity="0.5" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- [MODULE: FOOTER] -->
+    <footer class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">SHAQUIB<span>.</span></div>
+                <p>Architecting digital resilience for industrial giants.</p>
+                <div class="system-time">SYS_TIME: <span id="current-time">00:00:00</span></div>
+            </div>
+            <div class="footer-nav">
+                <h4>NAVIGATION</h4>
+                <a href="#hero">Infrastructure</a>
+                <a href="#projects">Project Files</a>
+                <a href="#architecture">System Logic</a>
+                <a href="#methodology">Research Theory</a>
+                <a href="#credentials">Credentials</a>
+            </div>
+            <div class="footer-social">
+                <h4>UPLINK</h4>
+                <a href="#" target="_blank">LINKEDIN</a>
+                <a href="#" target="_blank">GITHUB</a>
+                <a href="#">EMAIL_ENCRYPTED</a>
+            </div>
+            <div class="footer-legal">
+                <h4>COMPLIANCE</h4>
+                <span>SHA-256_VERIFIED</span>
+                <span>ISO_9001_COMPLIANT_ARCHITECTURE</span>
+                <span>© 2026 MD SHAQUIB.</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="line"></div>
+            <div class="legal-text">ALL RIGHTS RESERVED. SYSTEM_LEVEL_4_ENCRYPTION_ACTIVE.</div>
+        </div>
+    </footer>
+
+    <!-- [SCRIPTS] -->
+    <script src="script.js"></script>
+
+    <!-- 
+        ********************************************************************************
+        TECHNICAL_LOG_MANIFEST (Extended for Architectural Depth)
+        ********************************************************************************
+        ENTRY_001: Initializing DOM_TREE_v2.0
+        ENTRY_002: Mapping semantic elements to ARIA_NODES
+        ENTRY_003: Core load strategy: Progressive_Reveal
+        ENTRY_004: Responsive break-points: [320, 600, 992, 1200, 1440]
+        ENTRY_005: Design Tokens: [OUTER_GLOW, GLASS_REFRACTION, SCANLINE_OPACITY]
+        
+        MD_SHAQUIB_TECHNICAL_CREDENTIALS_REDUNDANCY:
+        - FULL_STACK_ENGINEER: TRUE
+        - SYSTEMS_ARCHITECT: TRUE
+        - LEAD_DEVELOPER: TRUE
+        - HEAD_OF_IT: TRUE
+        
+        PROJECT_IDENTIFIERS:
+        - RFID_HUB_v4: [LOG_ID_772]
+        - ERP_CORE: [LOG_ID_104]
+        - DATA_MIG: [LOG_ID_901]
+        
+        END_OF_MANIFEST
+        ********************************************************************************
+    -->
+
+
+</body>
+
+</html>
